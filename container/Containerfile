@@ -43,7 +43,7 @@ RUN mkdir "$ENSHROUDED_PATH" \
     && /home/steam/winetricks.sh
 
 #Expose ports
-EXPOSE 15636 15637
+EXPOSE 15636/udp 15637/udp
 
 WORKDIR /home/steam
 
