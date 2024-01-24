@@ -42,9 +42,9 @@ RUN mkdir "$ENSHROUDED_PATH" \
     && chmod +x /home/steam/steamcmd/steamcmd.sh \
     && /home/steam/winetricks.sh
 
-WORKDIR /home/steam
-
 #Expose ports
 EXPOSE 15636 15637
+
+WORKDIR /home/steam
 
 CMD ["/home/steam/entrypoint.sh"]
