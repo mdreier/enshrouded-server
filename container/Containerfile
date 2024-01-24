@@ -44,4 +44,7 @@ RUN mkdir "$ENSHROUDED_PATH" \
 
 WORKDIR /home/steam
 
+#Expose ports
+EXPOSE 15636 15637
+
 CMD ["/home/steam/entrypoint.sh"]
